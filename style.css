@@ -1,0 +1,39 @@
+.row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.card {
+    width: 100px;
+    height: 175px;
+    background-color: #777;
+    /* background: url('../match-match-game/img/cat3_fem.png') no-repeat 50% 50%; */
+    /* background-size: 95%; */
+    border-radius: 5px;
+    box-shadow: .0625rem .0625rem 0.0925rem #4e5350;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+    /* transition: transform 1s; */
+}
+
+.card.open {
+    background-color: #bbb;
+    /* transform: rotateY( 180deg ); */
+}
+
+.card .card-content {
+    display: none;
+    font-size: 30px;
+}
+
+.card.open .card-content {
+    display: block;
+}
+
+.invisible {
+  /* display: none; */
+  visibility: hidden;
+}
